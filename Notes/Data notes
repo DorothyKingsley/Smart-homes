@@ -1,0 +1,32 @@
+File: ENV.bson
+No. of objects : 298556
+
+Generic Data :
+hid : house identifier - we ideally dont need it, because it is a test bed
+uid : identifier of the component that created this document. Could be an IPv6 address, a
+MAC address, or a name. - possibly drop it
+bt - datetime needs to converted to date and time column separately
+ts- drop this 
+e- this is the main. parse e to get the values of the keyword recordings like BMP_TEMP,HDC_TEMP.
+    make the columns BMP_TEMP,HDC_TEMP, PIR_TRIGS, BMP_PRES
+    PIR_TRIGS - get the value parsed for 'v' list of 1s and 0s
+    
+File ENV_RAW_MON_ROOMS.bson
+e- RSSI values parse those into signal strengths for wearables.
+bt - get the date and time in separate fields
+
+File : Wear.bson
+what does one coordinate difference mean?
+understand the coordinates? where is center for the accelerometer?
+mc field in gw array - sequence no. of gateway field -- ignore
+mc outside - sequence no. of the wearable that generated the data -- ignore
+
+File : SPHERE_RAW_MON_PYTHON.bson
+Might need the below fields: Parse from data[2510:2700] 17:40 - 19:1
+bt - get the date time in separate fields.
+u'RSSI' - signal strength of accelerometer
+u'LOCATION' - to get the location // {u'n': u'LOCATION', u'v': u'bedroom 2'}
+
+
+
+

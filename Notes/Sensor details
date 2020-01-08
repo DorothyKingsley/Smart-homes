@@ -1,0 +1,25 @@
+##Specific to SPHERE
+
+##Environment Sensors :
+Can detect 1. Motion 2. Light Levels 3. Temperature 4. Humidity
+
+##Wristbands : 
+Can Detect 1. People who wear those (color-coded wristbands, need to check how it is represented in the data, with IDs i assume now)
+2. Activities using accelerometers
+
+##Silhoutte Sensors :
+Installed in Living room, hallway and kitchen
+Can detect : 1. Movement 2. Standing 3. Sitting
+Black and white images just showing the silhoutte or outline of the person.
+
+##Appliance Monitors :
+Can track electricity use
+Have got labels for each appliance and need to be used with that appliance only to track electricity use.
+Can detect : 1. TV use 2. Microwave use 3.Kettle use
+
+##Sphere Genie:
+App that runs on a tablet to monitor battery usage of smart wearables.
+Can be used to delete or pause data collection when required.
+
+Everything works inside the home only.
+The data is transfered to a sphere box on intervals.

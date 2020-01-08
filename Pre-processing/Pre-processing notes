@@ -1,0 +1,79 @@
+Data pre-processing:
+
+There are 22 .bson files in our data collection (sphere):
+
+ANN.bson----------------------------> There's nothing in the file
+ENV.bson----------------------------> Done 
+PYTHON.bson-------------------------> There's nothing in the file
+SPHERE_CTRL_ADMIN.bson--------------> There's nothing in the file
+SPHERE_CTRL_PYTHON.bson-------------> Done 
+SPHERE_CTRL_SHG.bson----------------> There's nothing in the file
+SPHERE_MON_ENV_CUPBOARD.bson--------> There's nothing in the file
+SPHERE_MON_ENV_ROOMS.bson-----------> Done 
+SPHERE_MON_PYTHON.bson--------------> Done 
+SPHERE_MON_SHG_ML.bson--------------> There's nothing in the file
+SPHERE_MON_SHG_SYSTEM.bson----------> Done 
+SPHERE_MON_VID_DINING_ROOM.bson-----> Done
+SPHERE_MON_VID_HALL.bson------------> Done
+SPHERE_MON_VID_KITCHEN.bson---------> Done
+SPHERE_MON_VID_LIVING_ROOM.bson-----> Done
+SPHERE_MON_WEAR_SPW.bson------------> Done
+SPHERE_RAW_MON_ENV_ROOMS.bson-------> Done
+SPHERE_RAW_MON_PYTHON.bson----------> Done
+SPHERE_RAW_MON_WEAR_SPW.bson--------> Done
+system.js.bson----------------------> Ignoring this file
+VID.bson----------------------------> Work in progress. Too huge, notebooks crashes frequently
+WEAR.bson---------------------------> Done
+
+Another file(hypercat):
+items.json--------------------------> Done
+
+----------------------------------------------------------------------------------
+Wear.bson:
+In column 'e':
+    Each record has a list of nested dictionaries. [{'n': 'ACCEL', 't': 0.18, 'v': [-0.032, 0, 0.992]}]. 
+    t values -> ['0.18','0.14','0.11','0.07','0','0.04']
+    for each t value we have corresponding 'v' list.
+    The .csv file has the 't' value as the column heading with its corresponding 'v' values for each record.
+    
+In column 'gw':
+    In this column we have 'uid','tso','mc' & 'rssi'. Each 'rssi' corresponds to 'uid' values. 
+    This again is a nested dictionary.
+    'uid'->['b8:ae:ed:78:cf:fe','b8:ae:ed:75:e0:24','b8:ae:ed:75:61:45','fd00::212:4b00:0:3']
+    In the csv file, you will find 'uid' values- mac address in this case, as the column heading and it's corresponding 'rssi' (signal strength) value.
+    
+Empty cells are replaced with 0.
+
+-----------------------------------------Wear End----------------------------------
+
+ENV.bson:
+In column 'e':
+    We have a list of nested dictionary with many fields: 'BMP_PRES','HDC_TEMP','LT','ELEC','BMP_TEMP','PIR_TRIGS','HDC_HUM'
+    I have created separate columns for the above fields and captured its value in the corresponding record.
+
+Empty cells are replaced with 0.
+
+------------------------------------------ENV END----------------------------------
+
+items.json:
+    I have tabulated object details.
+    Oid- object data
+    Object_metadata has a list of dictionaries. From this features are extracted and populated as column headings: 'Sensor', 'device_type', 'appliance', 'house_location', 'person'.
+    'Person'-> wearable (id: A,B,C etc)
+    
+-----------------------------------------items END------------------------------------
+
+VID.bson -> coming right up. Meanwhile, please play around with the other files. 
+My notebook is crashing every now and then, deemed to be utterly useless when in need. 
+
+
+
+------------------------------------------------------------------------------------
+UPDATE:
+Added UID to wear.csv 
+    b8:ae:ed:75:61:45	
+    b8:ae:ed:75:e0:24	
+    b8:ae:ed:78:cf:fe	
+    fd00::212:4b00:0:3
+The above appear to be mac address of the gateways and the values beneath them in the .csv file are the 'RSSI'(signal strength) with respect to each gw.
+

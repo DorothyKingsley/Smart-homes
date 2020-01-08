@@ -1,0 +1,40 @@
+Only look at ENV.bson, WEAR.bson and VID.bson files
+ACCEL values x,y,z - are based on gravity coordinates. Value 1 in x,y or z means 1g, 4=4g. Will always be negative.
+Should be plot as lines (individual for x, y, z) on  a graph. Need to consider the variation and not the absoulte values.
+We need to check how it changes over time/ distance.
+hid - hardware id (check hypercat --> items to determine which hardware it is refering to).
+uid - chech hypercat--> items to find which wearable it is.
+Hypercat --- > items.json gives details of sensors based on the uids.
+Every 20s data is captured. But might have delays and lost packets.
+
+Figure out the data structure for each particular sensor.
+RSSI- signal to noise ratio. High Negative means closer to the gateway in that particular room. Low negative means farther away.
+
+Always use bt as the time for the plotting or calculations.
+
+There is a gw array, which also contains the RSSI --> needs this for indoor localisation.
+The t fields, like t=0, t=0.04 are the time offsets from bt.
+So, t=0 means the latest time and final timestamp is calculated like bt-t.
+t=0.04 is actually bt-0.04 timestamp (earlier than t=0).
+The RSSI values in the gw array will be for the gateways that were connected at that point of time.
+
+Use BMP_TEMP and HDC_TEMP for temperature. Will have slight variations in values, but should show the same trend when visualized.
+Pressure might not be of extreme help.
+HDC_HUM = humidity needs to considered.
+PIR_TRIGS = person in room triggers, cannot be completely trusted. need to be backed up with other sensor readings.
+
+We can use a MONGODB database and put all those bson files into it.
+Any how, we need data pre-processing and justification of the methods followed.
+
+Video data - Should be looked at if we have time, or we cannot do without it.
+VID sensor data readings contain Lower left and upper right coordinates for the 2D and 3D bounding boxes.
+There is intensity and activity values in the vid jsons, but these cannot be trusted completely.
+
+Major tasks:
+Do the pre-processing.
+Transform the data if needed and visualize the trends possibly.
+We need to visualize the sensor readings before and after the experiment to justify that the activities did cause a change.
+Annotate the data.
+Understand how we can classify using ML.
+Clearly define our objective of this project --- Need suggestions.
+

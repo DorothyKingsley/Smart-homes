@@ -1,0 +1,10 @@
+
+
+
+
+** Idea list
+ * Energy consumption, so basically if people are leaving the room, turn things off
+ * Dementia idea, when people leave doors open, remind them
+ * This can be generalized into a general reminder idea based on peoples' habits
+ * General health idea
+ * Breaking in detection system

@@ -1,0 +1,32 @@
+_id,Sensor,device_type,appliance,house_location,person,cat_id,href
+59b1480e410b811c958f0123,Enviromental Sensor,SPES2,,dining room 1,,public,fd00::212:4b00:0:81
+59b1485f410b811c958f0124,Motion Detector,Intel NUC VIDEO,,living room 1,,public,B8AEED756145
+59b14951410b811c958f0125,Power Usage Monitor,Current Cost Appliance,TV,living room 1,,public,02052
+59b149cc410b811c958f0126,Power Usage Monitor,Current Cost Appliance,Washing Machine,kitchen 1,,public,03182
+59b149e8410b811c958f0127,Power Usage Monitor,Current Cost Appliance,Toaster,kitchen 1,,public,03454
+59b14a06410b811c958f0128,Power Usage Monitor,Current Cost Appliance,Kettle,kitchen 1,,public,00144
+59b14a28410b811c958f0129,Power Usage Monitor,Current Cost Appliance,fridge,undefined 1,,public,03727
+59b14a45410b811c958f012a,Power Usage Monitor,Current Cost Appliance,Microwave,kitchen 1,,public,02813
+59b14a57410b811c958f012b,Enviromental Sensor,SPES2,,kitchen 1,,public,fd00::212:4b00:0:82
+59b14aa4410b811c958f012c,Dry Water Sensor,SPAQ2_P,,kitchen 1,,public,fd00::212:4b00:0:85
+59b14af7410b811c958f012d,Motion Detector,Intel NUC VIDEO,,kitchen 1,,public,B8AEED78CFFE
+59b14b31410b811c958f012e,Enviromental Sensor,SPES2,,bathroom 1,,public,fd00::212:4b00:0:86
+59b14b52410b811c958f012f,Enviromental Sensor,SPES2,,staircase 1,,public,fd00::212:4b00:0:87
+59b14bd2410b811c958f0130,Enviromental Sensor,SPES2,,bedroom 1,,public,fd00::212:4b00:0:84
+59b14c2a410b811c958f0131,Wearable Sensor,SPW2,,,A,public,a0:e6:f8:00:00:c0
+59b14d72410b811c958f0132,Home Gateway,Intel NUC HOME,,dining room 1,,public,00C2C6E9B894
+59b14de9410b811c958f0133,Enviromental Sensor,SPES2,,hall 1,,public,fd00::212:4b00:0:83
+59b14f56410b811c958f0134,Motion Detector,Intel NUC VIDEO,,hall 1,,public,B8AEED75E024
+59b1522b410b811c958f0135,Enviromental Sensor,SPES2,,living room 1,,public,fd00::212:4b00:0:80
+595cfeb9c8864879ea847480,Sphere Gateway,SPG2_F,,kitchen 1,,public,fd00::212:4b00:0:3
+595cfea7c8864879ea84747f,Sphere Gateway,SPG2_F,,bedroom 2,,public,fd00::212:4b00:0:6
+595cfed0c8864879ea847481,Sphere Gateway,SPG2_F,,bedroom 1,,public,fd00::212:4b00:0:5
+595cfe8ec8864879ea84747e,Sphere Gateway,SPG2_F,,living room 1,,public,fd00::212:4b00:0:4
+5a8d4d9adef0431c1abb1f06,Motion Detector,Intel NUC VIDEO,,dining room 1,,public,94C69112AD24
+5a8ed365def0431c1abb1f07,Wearable Sensor,SPW2,,,B,public,a0:e6:f8:00:00:c1
+5a8ed420def0431c1abb1f08,Wearable Sensor,SPW2,,,E,public,a0:e6:f8:00:00:c4
+5a8ed43adef0431c1abb1f09,Wearable Sensor,SPW2,,,D,public,a0:e6:f8:00:00:c3
+5a8ed499def0431c1abb1f0a,Wearable Sensor,SPW2,,,C,public,a0:e6:f8:00:00:c2
+5a8ed7cedef0431c1abb1f0b,Wearable Sensor,SPW2,,,G,public,a0:e6:f8:00:00:c6
+5a8ed80adef0431c1abb1f0c,Wearable Sensor,SPW2,,,H,public,a0:e6:f8:00:00:c7
+5a8ed838def0431c1abb1f0d,Wearable Sensor,SPW2,,,F,public,a0:e6:f8:00:00:c5
