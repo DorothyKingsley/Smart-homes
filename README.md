@@ -11,13 +11,3 @@ Endpoint
 database-smart-home.c3u7upkbfcj5.eu-west-2.rds.amazonaws.com
 Port
 3306
-
-Division of Work :
-- Experiment design, data collection, ingress - ALL
-- Data Preprocessing - Dorothy
-- Data Transformation - Samia
-- Data Storage and Integration - Andreas
-- ML - Iason
-- Exploration and analysis - ALL
-- Data visualisation - Iason/Samia
-- Report writing - ALL
